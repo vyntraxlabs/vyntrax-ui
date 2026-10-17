@@ -1,0 +1,20 @@
+.vyntrax-button {
+  background-color: #E10600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 250ms;
+}
+
+.vyntrax-button:hover:not(:disabled) {
+  background-color: #B00000;
+}
+
+.vyntrax-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
