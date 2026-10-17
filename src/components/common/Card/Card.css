@@ -1,0 +1,36 @@
+.vyntrax-card {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-5);
+
+  padding: var(--space-6);
+
+  background-color: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    box-shadow var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.vyntrax-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.vyntrax-card:focus-within {
+  border-color: var(--color-primary);
+}
+
+.vyntrax-card.clickable {
+  cursor: pointer;
+}
+
+.vyntrax-card.clickable:hover {
+  transform: translateY(-2px);
+}

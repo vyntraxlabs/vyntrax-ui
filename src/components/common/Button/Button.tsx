@@ -1,23 +1,19 @@
-import "./Button.css"
-
-type ButtonProps = {
-  children: React.ReactNode
-  onClick?: () => void
-  disabled?: boolean
-}
+import "./Button.css";
+import type { ButtonProps } from "./Button.types";
 
 export function Button({
   children,
-  onClick,
-  disabled = false,
+  className = "",
+  type = "button",
+  ...props
 }: ButtonProps) {
   return (
     <button
-      className="vyntrax-button"
-      onClick={onClick}
-      disabled={disabled}
+      type={type}
+      className={`vyntrax-button ${className}`}
+      {...props}
     >
       {children}
     </button>
-  )
+  );
 }
