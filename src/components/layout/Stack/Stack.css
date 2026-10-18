@@ -1,0 +1,93 @@
+.vyntrax-stack {
+  display: flex;
+}
+
+.vyntrax-stack-vertical {
+  flex-direction: column;
+}
+
+.vyntrax-stack-horizontal {
+  flex-direction: row;
+}
+
+/* Gap */
+
+.vyntrax-stack-gap-0 {
+  gap: 0;
+}
+
+.vyntrax-stack-gap-1 {
+  gap: var(--space-1);
+}
+
+.vyntrax-stack-gap-2 {
+  gap: var(--space-2);
+}
+
+.vyntrax-stack-gap-3 {
+  gap: var(--space-3);
+}
+
+.vyntrax-stack-gap-4 {
+  gap: var(--space-4);
+}
+
+.vyntrax-stack-gap-5 {
+  gap: var(--space-5);
+}
+
+.vyntrax-stack-gap-6 {
+  gap: var(--space-6);
+}
+
+.vyntrax-stack-gap-8 {
+  gap: var(--space-8);
+}
+
+.vyntrax-stack-gap-10 {
+  gap: var(--space-10);
+}
+
+/* Align */
+
+.vyntrax-stack-align-start {
+  align-items: flex-start;
+}
+
+.vyntrax-stack-align-center {
+  align-items: center;
+}
+
+.vyntrax-stack-align-end {
+  align-items: flex-end;
+}
+
+.vyntrax-stack-align-stretch {
+  align-items: stretch;
+}
+
+/* Justify */
+
+.vyntrax-stack-justify-start {
+  justify-content: flex-start;
+}
+
+.vyntrax-stack-justify-center {
+  justify-content: center;
+}
+
+.vyntrax-stack-justify-end {
+  justify-content: flex-end;
+}
+
+.vyntrax-stack-justify-between {
+  justify-content: space-between;
+}
+
+.vyntrax-stack-justify-around {
+  justify-content: space-around;
+}
+
+.vyntrax-stack-justify-evenly {
+  justify-content: space-evenly;
+}
