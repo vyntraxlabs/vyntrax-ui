@@ -1,6 +1,8 @@
 import { useId } from "react";
 
 import "./Input.css";
+
+import { cn } from "../../../utils";
 import type { InputProps } from "./Input.types";
 
 export function Input({
@@ -9,7 +11,7 @@ export function Input({
   error,
   fullWidth = false,
   id,
-  className = "",
+  className,
   ...props
 }: InputProps) {
   const generatedId = useId();
@@ -17,9 +19,10 @@ export function Input({
 
   return (
     <div
-      className={`vyntrax-input-wrapper ${
-        fullWidth ? "full-width" : ""
-      }`}
+      className={cn(
+        "vyntrax-input-wrapper",
+        fullWidth && "full-width"
+      )}
     >
       {label && (
         <label
@@ -32,7 +35,7 @@ export function Input({
 
       <input
         id={inputId}
-        className={`vyntrax-input ${className}`}
+        className={cn("vyntrax-input", className)}
         {...props}
       />
 

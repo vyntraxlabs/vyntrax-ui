@@ -1,14 +1,16 @@
 import "./Card.css";
+
+import { cn } from "../../../utils";
 import type { CardProps } from "./Card.types";
 
 export function Card({
   children,
-  className = "",
+  className,
   ...props
 }: CardProps) {
   return (
     <div
-      className={`vyntrax-card ${className}`}
+      className={cn("vyntrax-card", className)}
       {...props}
     >
       {children}

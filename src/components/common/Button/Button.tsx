@@ -1,16 +1,20 @@
 import "./Button.css";
+
+import { cn } from "../../../utils";
 import type { ButtonProps } from "./Button.types";
 
 export function Button({
   children,
-  className = "",
-  type = "button",
+  className,
+  onClick,
+  disabled = false,
   ...props
 }: ButtonProps) {
   return (
     <button
-      type={type}
-      className={`vyntrax-button ${className}`}
+      className={cn("vyntrax-button", className)}
+      onClick={onClick}
+      disabled={disabled}
       {...props}
     >
       {children}
