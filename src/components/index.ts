@@ -1,7 +1,3 @@
-export * from "./common/Button";
-export * from "./common/Card";
-export * from "./common/Input";
-
+export * from "./common";
 export * from "./layout";
-
-export * from "./typography/Heading";
+export * from "./typography/index";

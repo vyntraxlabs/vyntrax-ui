@@ -6,4 +6,8 @@ import type {
 export interface CardProps
   extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
+
+  title?: string;
+
+  subtitle?: string;
 }

@@ -6,4 +6,6 @@ import type {
 export interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
+
+  fullWidth?: boolean;
 }

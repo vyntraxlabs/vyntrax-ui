@@ -44,3 +44,7 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.vyntrax-button-full-width {
+  width: 100%;
+}

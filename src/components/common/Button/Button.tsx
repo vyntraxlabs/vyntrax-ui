@@ -6,15 +6,16 @@ import type { ButtonProps } from "./Button.types";
 export function Button({
   children,
   className,
-  onClick,
-  disabled = false,
+  fullWidth = false,
   ...props
 }: ButtonProps) {
   return (
     <button
-      className={cn("vyntrax-button", className)}
-      onClick={onClick}
-      disabled={disabled}
+      className={cn(
+        "vyntrax-button",
+        fullWidth && "vyntrax-button-full-width",
+        className
+      )}
       {...props}
     >
       {children}
