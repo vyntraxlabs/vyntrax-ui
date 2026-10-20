@@ -1,0 +1,17 @@
+.vyntrax-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: inherit;
+
+  line-height: 0;
+
+  flex-shrink: 0;
+
+  user-select: none;
+}
+
+.vyntrax-icon svg {
+  display: block;
+}
