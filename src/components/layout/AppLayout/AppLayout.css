@@ -8,3 +8,10 @@
   background-color: var(--color-background);
   color: var(--color-text);
 }
+
+.vyntrax-app-shell {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
