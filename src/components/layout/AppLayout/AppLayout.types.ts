@@ -4,8 +4,9 @@ import type {
 } from "react";
 
 export interface AppLayoutProps
-  extends HTMLAttributes<HTMLDivElement> {
-  children?: ReactNode;
+  extends HTMLAttributes<HTMLElement> {
+  children: ReactNode;
 
   showNavbar?: boolean;
+  showSidebar?: boolean;
 }

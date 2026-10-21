@@ -15,7 +15,7 @@ import {
 
 export function Login() {
   return (
-    <AppLayout showNavbar={false}>
+    <AppLayout showNavbar={false} showSidebar={false}>
       <Container>
         <Flex fullWidth fullHeight justify="center" align="center">
           <Card>

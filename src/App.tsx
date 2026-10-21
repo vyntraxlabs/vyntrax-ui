@@ -1,5 +1,5 @@
-import { Dashboard } from "./pages";
+import { AppRouter } from "./router";
 
 export default function App() {
-  return <Dashboard />;
+  return <AppRouter />;
 }
