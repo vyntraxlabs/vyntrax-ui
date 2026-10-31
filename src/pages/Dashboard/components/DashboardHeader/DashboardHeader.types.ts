@@ -1,0 +1,1 @@
+export type DashboardHeaderProps = Record<string, never>;

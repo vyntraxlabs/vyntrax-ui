@@ -1,6 +1,5 @@
 import {
   Camera,
-  Cpu,
   Home,
   Settings,
   Shield,
@@ -28,11 +27,7 @@ export const navigation = [
     icon: Shield,
     path: "/security",
   },
-  {
-    label: "AI Assistant",
-    icon: Cpu,
-    path: "/ai",
-  },
+
   {
     label: "Settings",
     icon: Settings,

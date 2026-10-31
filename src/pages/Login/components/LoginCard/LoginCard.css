@@ -1,0 +1,56 @@
+.login-card {
+  width: 100%;
+  max-width: 640px;
+
+  padding: 56px;
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-xl);
+
+  box-shadow: var(--shadow-xl);
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.login-header img {
+  width: 72px;
+  height: auto;
+
+  margin-bottom: 18px;
+}
+
+.login-header h1 {
+  margin: 0;
+
+  font-size: 3rem;
+
+  letter-spacing: .08em;
+}
+
+.login-product {
+  margin-top: 10px;
+  margin-bottom: 18px;
+
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-lg);
+
+  font-weight: 600;
+}
+
+.login-subtitle {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-md);
+}

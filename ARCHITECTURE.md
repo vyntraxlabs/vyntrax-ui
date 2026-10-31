@@ -359,3 +359,88 @@ Keep the library independent.
 Security first.
 
 Quality over quantity.
+
+---
+
+# Project Architecture Rules
+
+These rules were established after the first architecture review and must be followed throughout the project.
+
+## Folder Organization
+
+The folder structure is considered stable.
+
+Do not create new top-level folders without a technical justification.
+
+Current component organization:
+
+- branding
+- common
+- feedback
+- forms
+- layout
+- navigation
+- typography
+
+## Component Placement
+
+Always place new components in the existing category.
+
+Examples:
+
+- Button → common
+- Card → common
+- Badge → common
+- Divider → common
+- Input → common
+
+- Logo → branding
+
+- Navbar → navigation
+- Sidebar → navigation
+
+- AppLayout → layout
+- Container → layout
+- Flex → layout
+- Stack → layout
+
+- Text → typography
+- Heading → typography
+- Label → typography
+
+- Spinner → feedback
+- Alert → feedback
+- Toast → feedback
+
+## No Duplicate Components
+
+Never create a second version of an existing component.
+
+Before creating a component:
+
+1. Search the project.
+2. Reuse if it already exists.
+3. Extend it when possible.
+
+## No Architecture Changes
+
+The architecture is frozen.
+
+Do not:
+
+- move folders;
+- rename categories;
+- create parallel structures.
+
+Only evolve the existing architecture.
+
+## Development Workflow
+
+New functionality should follow this order:
+
+1. Identify the need.
+2. Reuse an existing component.
+3. Extend the component if necessary.
+4. Create a new component only if no suitable one exists.
+
+This keeps the Design System small, consistent and maintainable.

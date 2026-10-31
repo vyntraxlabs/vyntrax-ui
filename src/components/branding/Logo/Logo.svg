@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Filtros de Iluminação e Brilho -->
+    <filter id="drop-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+
+    <!-- Gradientes Vermelhos -->
+    <linearGradient id="red-top-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1a1a" />
+      <stop offset="50%" stop-color="#eb0008" />
+      <stop offset="100%" stop-color="#a80004" />
+    </linearGradient>
+
+    <linearGradient id="red-cross" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#990003" />
+      <stop offset="35%" stop-color="#dd0007" />
+      <stop offset="70%" stop-color="#ff1c1c" />
+      <stop offset="100%" stop-color="#c40005" />
+    </linearGradient>
+
+    <linearGradient id="red-bottom-fold" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ff2626" />
+      <stop offset="60%" stop-color="#d60006" />
+      <stop offset="100%" stop-color="#7a0002" />
+    </linearGradient>
+
+    <!-- Gradientes Prata / Branco -->
+    <linearGradient id="silver-top-right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#f5f7fa" />
+      <stop offset="80%" stop-color="#d1d6dc" />
+      <stop offset="100%" stop-color="#a6acb5" />
+    </linearGradient>
+
+    <linearGradient id="silver-bottom-right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e8ecf0" />
+      <stop offset="100%" stop-color="#afb6c1" />
+    </linearGradient>
+
+    <linearGradient id="silver-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="55%" stop-color="#e3e7ec" />
+      <stop offset="100%" stop-color="#9ca4af" />
+    </linearGradient>
+
+    <!-- Brilhos Especulares / Reflexos -->
+    <linearGradient id="gloss-sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="15%" stop-color="#ffffff" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="fold-shadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <g id="logo-vx" filter="url(#drop-shadow)">
+    <!-- 1. Haste Superior Direita (Prata / X) -->
+    <path d="M 700 204 L 924 204 L 658 514 L 554 380 Z" fill="url(#silver-top-right)" />
+    <!-- Brilho no topo da haste prata -->
+    <path d="M 700 204 L 924 204 L 910 220 L 712 220 Z" fill="#ffffff" opacity="0.9" />
+
+    <!-- 2. Haste Inferior Direita (Prata / X) -->
+    <path d="M 576 662 L 684 540 L 868 800 L 658 800 Z" fill="url(#silver-bottom-right)" />
+    <!-- Chanfrado e luz inferior direita -->
+    <path d="M 684 540 L 868 800 L 848 800 L 674 555 Z" fill="#ffffff" opacity="0.35" />
+
+    <!-- 3. Haste Inferior Esquerda (Prata / V) -->
+    <path d="M 154 461 L 244 461 L 388 720 L 328 720 Z" fill="url(#silver-left)" />
+    <!-- Borda chanfrada branca -->
+    <path d="M 154 461 L 244 461 L 236 473 L 166 473 Z" fill="#ffffff" opacity="0.9" />
+
+    <!-- 4. Barra Diagonal Vermelha Principal (Cruza o centro formando o V e X) -->
+    <path d="M 330 714 L 588 424 L 660 514 L 382 800 L 328 714 Z" fill="url(#red-cross)" />
+
+    <!-- 5. Haste Superior Esquerda Vermelha (V) -->
+    <path d="M 75 204 L 312 204 L 474 430 L 348 576 Z" fill="url(#red-top-left)" />
+
+    <!-- 6. Dobra de Conexão Inferior Vermelha (Vértice inferior do V) -->
+    <path d="M 348 576 L 474 430 L 400 520 L 328 714 L 382 800 L 424 800 L 384 714 Z" fill="url(#red-bottom-fold)" />
+
+    <!-- 7. Sombras de Transição e Dobras (Efeito 3D Ribbon) -->
+    <!-- Sombra projetada sob a dobra vermelha superior -->
+    <path d="M 348 576 L 474 430 L 440 470 L 330 630 Z" fill="url(#fold-shadow)" opacity="0.7" />
+    <!-- Sombra entre o cruzamento vermelho e as hastes brancas -->
+    <path d="M 588 424 L 660 514 L 635 485 Z" fill="#000000" opacity="0.4" />
+
+    <!-- 8. Destaques de Brilho / Vidro / Reflexo Superior -->
+    <!-- Chanfrado superior esquerdo -->
+    <path d="M 75 204 L 312 204 L 302 216 L 95 216 Z" fill="#ffffff" opacity="0.8" />
+    <!-- Reflexo longitudinal na barra vermelha -->
+    <path d="M 312 204 L 474 430 L 454 445 L 298 216 Z" fill="url(#gloss-sheen)" opacity="0.45" />
+    <!-- Brilho no vértice do X -->
+    <path d="M 554 380 L 658 514 L 648 522 L 546 392 Z" fill="#ffffff" opacity="0.5" />
+  </g>
+</svg>

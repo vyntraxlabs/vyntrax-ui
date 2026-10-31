@@ -4,33 +4,57 @@
 
   gap: var(--space-5);
 
+  width: 100%;
+
   padding: var(--space-6);
 
-  background-color: var(--color-surface);
+  background: var(--color-surface);
 
   border: 1px solid var(--color-border);
+
   border-radius: var(--radius-lg);
 
   box-shadow: var(--shadow-sm);
 
   transition:
-    box-shadow var(--transition-fast),
-    border-color var(--transition-fast),
-    transform var(--transition-fast);
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
 }
 
 .vyntrax-card:hover {
-  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+
+  border-color: rgba(255, 59, 48, .35);
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.35);
 }
 
 .vyntrax-card:focus-within {
   border-color: var(--color-primary);
 }
 
-.vyntrax-card.clickable {
-  cursor: pointer;
+.vyntrax-card-header {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-2);
 }
 
-.vyntrax-card.clickable:hover {
-  transform: translateY(-2px);
+.vyntrax-card-title {
+  margin: 0;
+}
+
+.vyntrax-card-subtitle {
+  margin: 0;
+
+  color: var(--color-text-secondary);
+}
+
+.vyntrax-card-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
 }

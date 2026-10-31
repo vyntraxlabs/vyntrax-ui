@@ -1,28 +1,27 @@
 import "./Dashboard.css";
 
+import { AppLayout, Container } from "../../components";
+
 import {
-  AppLayout,
-  Container,
-  Flex,
-  Heading,
-} from "../../components";
+  DashboardHeader,
+  DashboardStats,
+  QuickActions,
+  RecentEvents,
+} from "./components";
 
 export function Dashboard() {
   return (
     <AppLayout>
       <Container>
-        <Flex
-          direction="column"
-          gap="6"
-        >
-          <Heading level={1}>
-            Dashboard
-          </Heading>
+        <DashboardHeader />
 
-          <p>
-            Welcome to VYNTRAX Home AI
-          </p>
-        </Flex>
+        <DashboardStats />
+
+        <div className="vyntrax-dashboard-grid">
+          <RecentEvents />
+
+          <QuickActions />
+        </div>
       </Container>
     </AppLayout>
   );

@@ -38,3 +38,25 @@
 .vyntrax-logo-lg .vyntrax-logo-text {
   font-size: var(--font-size-4xl);
 }
+
+.vyntrax-logo-image{
+    display:block;
+    object-fit:contain;
+
+    border-radius:18px;
+}
+
+.vyntrax-logo-sm .vyntrax-logo-image {
+  width: 32px;
+  height: 32px;
+}
+
+.vyntrax-logo-md .vyntrax-logo-image {
+  width: 48px;
+  height: 48px;
+}
+
+.vyntrax-logo-lg .vyntrax-logo-image {
+  width: 96px;
+  height: 96px;
+}

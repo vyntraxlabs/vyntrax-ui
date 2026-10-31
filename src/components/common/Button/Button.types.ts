@@ -8,4 +8,6 @@ export interface ButtonProps
   children: ReactNode;
 
   fullWidth?: boolean;
+
+  loading?: boolean;
 }

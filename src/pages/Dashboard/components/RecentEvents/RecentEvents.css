@@ -1,0 +1,61 @@
+.vyntrax-recent-events {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-4);
+}
+
+.vyntrax-recent-event {
+  display: flex;
+  align-items: center;
+
+  gap: var(--space-4);
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+}
+
+.status.success {
+  background: #22c55e;
+}
+
+.status.warning {
+  background: #f59e0b;
+}
+
+.status.error {
+  background: #ef4444;
+}
+
+.status.info {
+  background: #3b82f6;
+}
+
+.event-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.event-title {
+  font-weight: 500;
+}
+
+.event-time {
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-sm);
+}

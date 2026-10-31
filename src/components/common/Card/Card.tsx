@@ -1,5 +1,4 @@
 import "./Card.css";
-import "./Card.css";
 
 import { cn } from "../../../utils";
 import type { CardProps } from "./Card.types";
@@ -12,23 +11,16 @@ export function Card({
   ...props
 }: CardProps) {
   return (
-    <div
-      className={cn("vyntrax-card", className)}
-      {...props}
-    >
-      {title && (
-        <h2 className="vyntrax-card-title">
-          {title}
-        </h2>
+    <div className={cn("vyntrax-card", className)} {...props}>
+      {(title || subtitle) && (
+        <header className="vyntrax-card-header">
+          {title && <h2 className="vyntrax-card-title">{title}</h2>}
+
+          {subtitle && <p className="vyntrax-card-subtitle">{subtitle}</p>}
+        </header>
       )}
 
-      {subtitle && (
-        <p className="vyntrax-card-subtitle">
-          {subtitle}
-        </p>
-      )}
-
-      {children}
+      <div className="vyntrax-card-content">{children}</div>
     </div>
   );
 }

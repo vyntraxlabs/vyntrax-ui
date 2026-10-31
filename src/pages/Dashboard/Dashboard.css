@@ -1,0 +1,15 @@
+.vyntrax-dashboard-grid {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+
+  gap: var(--space-6);
+
+  margin-top: var(--space-6);
+}
+
+@media (max-width: 1024px) {
+  .vyntrax-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}

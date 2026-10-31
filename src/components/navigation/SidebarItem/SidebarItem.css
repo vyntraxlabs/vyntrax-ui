@@ -1,0 +1,35 @@
+.vyntrax-sidebar-item {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 12px;
+
+  background: transparent;
+  color: var(--color-text-secondary);
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  text-decoration: none;
+}
+
+.vyntrax-sidebar-item:hover {
+  background-color: var(--color-surface-hover);
+  color: var(--color-text-primary);
+}
+
+.vyntrax-sidebar-item--active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.vyntrax-sidebar-item:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}

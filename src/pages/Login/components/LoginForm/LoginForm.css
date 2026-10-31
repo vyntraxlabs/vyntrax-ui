@@ -1,0 +1,21 @@
+.vyntrax-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form-actions {
+  margin-top: 8px;
+}
+
+.vyntrax-login-error {
+  color: var(--color-danger);
+  font-size: var(--font-size-sm);
+  text-align: center;
+}

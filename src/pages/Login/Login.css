@@ -1,8 +1,19 @@
-.login-subtitle {
-  margin: 0;
+.login-card {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.login-product {
+  margin: 6px 0 0;
   color: var(--color-text-secondary);
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-normal);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+}
+
+.login-subtitle {
+  margin: 8px 0 32px;
+  color: var(--color-text-secondary);
   text-align: center;
 }

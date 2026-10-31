@@ -9,5 +9,9 @@ export interface LogoProps
 
   text?: string;
 
+  showText?: boolean;
+
+  variant?: "default" | "3d";
+
   size?: "sm" | "md" | "lg";
 }

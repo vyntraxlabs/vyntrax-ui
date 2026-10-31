@@ -7,6 +7,8 @@ export function Button({
   children,
   className,
   fullWidth = false,
+  loading = false,
+  disabled,
   ...props
 }: ButtonProps) {
   return (
@@ -16,9 +18,10 @@ export function Button({
         fullWidth && "vyntrax-button-full-width",
         className
       )}
+      disabled={disabled || loading}
       {...props}
     >
-      {children}
+      {loading ? "Loading..." : children}
     </button>
   );
 }
