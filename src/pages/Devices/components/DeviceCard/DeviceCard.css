@@ -1,0 +1,38 @@
+.device-card{
+    background:#1b1b1f;
+    border:1px solid #2d2d35;
+    border-radius:16px;
+    padding:20px;
+
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+
+    transition:.2s;
+}
+
+.device-card:hover{
+    border-color:#ff2d2d;
+}
+
+.device-card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.device-card-header h3{
+    margin:0;
+}
+
+.device-card-footer{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.device-room{
+    color:#8b8b95;
+    font-size:0.9rem;
+    margin-top:4px;
+}

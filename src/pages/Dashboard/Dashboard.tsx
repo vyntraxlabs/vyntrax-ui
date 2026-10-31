@@ -1,6 +1,7 @@
 import "./Dashboard.css";
 
 import { AppLayout, Container } from "../../components";
+import { AssistantCard } from "./components/AssistantCard";
 
 import {
   DashboardHeader,
@@ -21,6 +22,8 @@ export function Dashboard() {
           <RecentEvents />
 
           <QuickActions />
+
+          <AssistantCard />
         </div>
       </Container>
     </AppLayout>

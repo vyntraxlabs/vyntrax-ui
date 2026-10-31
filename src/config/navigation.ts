@@ -1,9 +1,11 @@
 import {
   Camera,
   Home,
+  LayoutGrid,
   Settings,
   Shield,
   Smartphone,
+  Sparkles,
 } from "lucide-react";
 
 export const navigation = [
@@ -11,6 +13,16 @@ export const navigation = [
     label: "Dashboard",
     icon: Home,
     path: "/dashboard",
+  },
+  {
+  label: "Aurora",
+  icon: Sparkles,
+  path: "/ai-assistant",
+  },
+  {
+    label: "Rooms",
+    icon: LayoutGrid,
+    path: "/rooms",
   },
   {
     label: "Devices",

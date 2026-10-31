@@ -1,0 +1,43 @@
+.assistant-card{
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+}
+
+.assistant-header{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.assistant-header h2{
+    margin:0;
+    font-size:2rem;
+}
+
+.assistant-header p{
+    margin-top:8px;
+    opacity:.7;
+}
+
+.assistant-status{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.assistant-status div{
+    padding:20px;
+    border-radius:14px;
+    background:rgba(255,255,255,.03);
+}
+
+.assistant-status strong{
+    display:block;
+    font-size:1.5rem;
+    color:#ff3131;
+}
+
+.assistant-status span{
+    opacity:.7;
+}

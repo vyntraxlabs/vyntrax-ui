@@ -5,3 +5,4 @@ export * from "./Cameras";
 export * from "./Security";
 export * from "./AIAssistant";
 export * from "./Settings";
+export { Rooms } from "./Rooms/Rooms";
