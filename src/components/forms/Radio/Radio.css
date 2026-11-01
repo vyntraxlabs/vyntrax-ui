@@ -1,0 +1,51 @@
+.vyntrax-radio-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.vyntrax-radio-control {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.vyntrax-radio {
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+
+  flex-shrink: 0;
+
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.vyntrax-radio:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.vyntrax-radio:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.vyntrax-radio-label {
+  cursor: pointer;
+}
+
+.vyntrax-radio:disabled + .vyntrax-radio-label {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.vyntrax-radio-helper {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.vyntrax-radio-error {
+  font-size: var(--font-size-sm);
+  color: var(--color-error);
+}

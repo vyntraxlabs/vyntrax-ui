@@ -1,0 +1,51 @@
+.vyntrax-checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.vyntrax-checkbox-control {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.vyntrax-checkbox {
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+
+  flex-shrink: 0;
+
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.vyntrax-checkbox:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.vyntrax-checkbox:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.vyntrax-checkbox-label {
+  cursor: pointer;
+}
+
+.vyntrax-checkbox:disabled + .vyntrax-checkbox-label {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.vyntrax-checkbox-helper {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.vyntrax-checkbox-error {
+  font-size: var(--font-size-sm);
+  color: var(--color-error);
+}
