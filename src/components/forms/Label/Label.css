@@ -1,0 +1,11 @@
+.vyntrax-label {
+  display: inline-block;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+.vyntrax-label-required {
+  color: var(--color-error);
+}
